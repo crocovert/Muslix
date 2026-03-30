@@ -1,0 +1,5 @@
+C:\Users\patrick.palmier\source\repos\Muslix\bin\Release\net8.0\publish\Muslix.exe
+C:\Users\patrick.palmier\source\repos\Muslix\bin\Release\net8.0\publish\Muslix.dll
+C:\Users\patrick.palmier\source\repos\Muslix\bin\Release\net8.0\publish\Muslix.deps.json
+C:\Users\patrick.palmier\source\repos\Muslix\bin\Release\net8.0\publish\Muslix.runtimeconfig.json
+C:\Users\patrick.palmier\source\repos\Muslix\bin\Release\net8.0\publish\Muslix.pdb

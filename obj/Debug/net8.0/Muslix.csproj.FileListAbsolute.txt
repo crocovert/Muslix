@@ -1,0 +1,14 @@
+C:\Users\patrick.palmier\source\repos\Muslix\bin\Debug\net8.0\Muslix.exe
+C:\Users\patrick.palmier\source\repos\Muslix\bin\Debug\net8.0\Muslix.deps.json
+C:\Users\patrick.palmier\source\repos\Muslix\bin\Debug\net8.0\Muslix.runtimeconfig.json
+C:\Users\patrick.palmier\source\repos\Muslix\bin\Debug\net8.0\Muslix.dll
+C:\Users\patrick.palmier\source\repos\Muslix\bin\Debug\net8.0\Muslix.pdb
+C:\Users\patrick.palmier\source\repos\Muslix\obj\Debug\net8.0\Muslix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\patrick.palmier\source\repos\Muslix\obj\Debug\net8.0\Muslix.AssemblyInfoInputs.cache
+C:\Users\patrick.palmier\source\repos\Muslix\obj\Debug\net8.0\Muslix.AssemblyInfo.cs
+C:\Users\patrick.palmier\source\repos\Muslix\obj\Debug\net8.0\Muslix.csproj.CoreCompileInputs.cache
+C:\Users\patrick.palmier\source\repos\Muslix\obj\Debug\net8.0\Muslix.dll
+C:\Users\patrick.palmier\source\repos\Muslix\obj\Debug\net8.0\refint\Muslix.dll
+C:\Users\patrick.palmier\source\repos\Muslix\obj\Debug\net8.0\Muslix.pdb
+C:\Users\patrick.palmier\source\repos\Muslix\obj\Debug\net8.0\Muslix.genruntimeconfig.cache
+C:\Users\patrick.palmier\source\repos\Muslix\obj\Debug\net8.0\ref\Muslix.dll
