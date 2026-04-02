@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix.csproj",
+      "projectUniqueName": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Muslix.csproj",
       "projectName": "Muslix",
-      "projectPath": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix.csproj",
+      "projectPath": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Muslix.csproj",
       "packagesPath": "C:\\Users\\patrick.palmier\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\obj\\",
+      "outputPath": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

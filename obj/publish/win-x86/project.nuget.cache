@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O5+T3/xsbCM=",
+  "dgSpecHash": "711aJ+FAaLU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix.csproj",
+  "projectFilePath": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Muslix.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\patrick.palmier\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.25\\microsoft.net.illink.tasks.8.0.25.nupkg.sha512",
     "C:\\Users\\patrick.palmier\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.25\\microsoft.netcore.app.runtime.win-x86.8.0.25.nupkg.sha512",

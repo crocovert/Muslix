@@ -1,0 +1,2 @@
+C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\publish\win-x64\Muslix.pdb
+C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\publish\win-x64\Muslix.exe

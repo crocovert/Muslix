@@ -899,7 +899,7 @@ namespace Muslic
                 int pct  = (int)(100L * done / totalGroupes);
                 Console.SetCursorPosition(cleft, ctop);
                 Console.Write($"Shortest paths computing...:{pct}%  ");
-            }, null, 200, 200);
+            }, null, 2000, 2000);
 
             Parallel.ForEach(
                 groupes,
