@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|c:\\users\\patrick.palmier\\source\\repos\\muslix\\muslix\\muslix.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|solutionrelative:muslix.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|c:\\users\\patrick.palmier\\source\\repos\\muslix\\muslix\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|c:\\users\\patrick.palmier\\source\\repos\\muslix\\muslix\\muslix.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|solutionrelative:muslix.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,11 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Muslix",
               "DocumentMoniker": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Muslix.csproj",
               "RelativeDocumentMoniker": "Muslix.csproj",
@@ -30,28 +30,28 @@
               "RelativeToolTip": "Muslix.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-03-30T08:28:25.485Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAGIDAAAAAAAAAAAWwIUDAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAPgJAAAAAAAAAAAmwCEKAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-27T09:10:48.881Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2026-03-27T09:10:48.881Z",
+              "EditorCaption": ""
             }
           ]
         }
