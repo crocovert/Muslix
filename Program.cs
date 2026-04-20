@@ -1116,30 +1116,24 @@ namespace Muslic
                 if (st.id_bucket >= st.gga_nq.Count
                     || st.id_bucket > bucket_max) break;
 
-                // [OPT-3] Sélection pivot avec lazy deletion
                 int pivot = -1, id_pivot = -1;
                 var bucket = st.gga_nq[st.id_bucket];
 
                 if (p.algorithme == 0)
                 {
-                    // FIFO : premier élément valide
-                    while (bucket.Count > 0)
-                    {
-                        int cand = bucket[0];
-                        bucket.RemoveAt(0);
-                        // [OPT-3] Ignorer les éléments obsolètes
-                        if (st.touche[cand] != 3) { pivot = cand; break; }
-                    }
+                    // GGA : prendre le premier élément — pas de tri, pas de marquage touche=3
+                    // Un arc peut être re-traité si un meilleur chemin est trouvé plus tard
+                    pivot = bucket[0];
+                    bucket.RemoveAt(0);
                 }
                 else
                 {
-                    // Min-cost in bucket avec lazy deletion
+                    // Dijkstra with buckets : prendre le minimum du bucket courant
+                    // Corriger le bug original (k <= Count -> k < Count)
                     double cout_min = 1e38;
-                    for (int k = bucket.Count - 1; k >= 0; k--)
+                    for (int k = 0; k < bucket.Count; k++)
                     {
                         int cand = bucket[k];
-                        if (st.touche[cand] == 3)   // déjà finalisé : purger
-                        { bucket.RemoveAt(k); continue; }
                         if (st.cout[cand] < cout_min)
                         { cout_min = st.cout[cand]; id_pivot = k; }
                     }
@@ -1148,9 +1142,9 @@ namespace Muslic
                         pivot = bucket[id_pivot];
                         bucket.RemoveAt(id_pivot);
                     }
+                    if (pivot >= 0) st.touche[pivot] = 3; // finalisé seulement pour algo=1
                 }
                 if (pivot < 0) { st.id_bucket++; continue; }
-                st.touche[pivot] = 3; // finalisé
 
                 // [OPT-1] Alias pivot
                 var lp = links[pivot];
@@ -1163,6 +1157,9 @@ namespace Muslic
                     var ls = links[succ];
                     st.EnsureInit(succ, ls.services.Count);
                     string stype = ls.type ?? "0";
+
+                    // Pour algo=1 (Dijkstra) : ne pas re-traiter les arcs finalisés
+                    if (p.algorithme == 1 && st.touche[succ] == 3) continue;
 
                     // Demi-tours interdits
                     float penalite = 0f;
@@ -1503,19 +1500,30 @@ namespace Muslic
                         goto fin_gga2;
                 }
 
-                // Sélectionner le pivot (meilleur coût dans le bucket)
+                // Sélectionner le pivot selon l'algorithme
                 int pivot = -1, id_pivot = -1;
-                float cout_min = 1e38f;
                 var bl = st.gga_nq[st.id_bucket];
-                for (int k = 0; k < bl.Count; k++)
+
+                if (p.algorithme == 0)
                 {
-                    int idx = bl[k];
-                    if (st.cout[idx] < cout_min)
-                    { cout_min = st.cout[idx]; pivot = idx; id_pivot = k; }
+                    // GGA : premier élément, pas de marquage touche=3
+                    pivot = bl[0];
+                    bl.RemoveAt(0);
+                }
+                else
+                {
+                    // Dijkstra : minimum du bucket
+                    float cout_min = 1e38f;
+                    for (int k = 0; k < bl.Count; k++)
+                    {
+                        int idx = bl[k];
+                        if (st.cout[idx] < cout_min)
+                        { cout_min = st.cout[idx]; pivot = idx; id_pivot = k; }
+                    }
+                    if (id_pivot >= 0) bl.RemoveAt(id_pivot);
+                    if (pivot >= 0) st.touche[pivot] = 3; // finalisé seulement pour algo=1
                 }
                 if (pivot < 0) { st.id_bucket++; continue; }
-                bl.RemoveAt(id_pivot);
-                st.touche[pivot] = 3;
 
                 var lp2 = links[pivot];
                 string ptype2 = lp2.type ?? "0";
@@ -1527,6 +1535,9 @@ namespace Muslic
                     var lpred = links[predecesseur];
                     string pred_type = lpred.type ?? "0";
                     string pivot_type = ptype2;
+
+                    // Pour algo=1 (Dijkstra) : ne pas re-traiter les arcs finalisés
+                    if (p.algorithme == 1 && st.touche[predecesseur] == 3) continue;
 
                     float penalite = 0;
                     if (p.demitours && lp2.nd == lpred.no) penalite = -1;
