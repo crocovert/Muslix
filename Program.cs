@@ -991,15 +991,18 @@ namespace Muslic
                             var ch0 = chaine_od.Split(param, StringSplitOptions.RemoveEmptyEntries);
                             if (ch0.Length < 5) continue;
                             string p0 = ch0[0].Trim();
+                            string q0 = ch0[1].Trim();
                             var ci2 = System.Globalization.CultureInfo.InvariantCulture;
                             int jour0 = (int)float.Parse(ch0[3].Replace(',', '.'), ci2);
                             float hor0 = float.Parse(ch0[4].Replace(',', '.'), ci2);
                             int sens0 = (ch0.Length > 5 && ch0[5].ToLower() == "a") ? 2 : 1;
-                            // Paires avec params spécifiques (ch0.Length>17) -> groupe unique
                             bool specific = ch0.Length > 17;
+                            // Sens 1: regrouper par (p, jour, horaire) - arbre depuis p
+                            // Sens 2: regrouper par (q, jour, horaire) - arbre depuis q
+                            string key_node = (sens0 == 2) ? q0 : p0;
                             var key2 = specific
                                 ? ("__" + numod_counter, jour0, hor0, sens0)
-                                : (p0, jour0, hor0, sens0);
+                                : (key_node, jour0, hor0, sens0);
                             if (!key_to_idx.TryGetValue(key2, out int gidx))
                             {
                                 gidx = groupes_od.Count;
@@ -4370,7 +4373,6 @@ namespace Muslic
                                                             }
                                                             else if (projet.param_affectation_horaire.sortie_temps < 3)
                                                             {
-
                                                                 texte = libod + ";" + q;
                                                                 texte += ";" + projet.reseaux[projet.reseau_actif].nodes[projet.reseaux[projet.reseau_actif].links[arrivee].no].i;
                                                                 texte += "-" + projet.reseaux[projet.reseau_actif].nodes[projet.reseaux[projet.reseau_actif].links[arrivee].nd].i;
@@ -4379,7 +4381,15 @@ namespace Muslic
                                                                 texte += ";" + jour.ToString("0");
                                                                 texte += ";" + st[arrivee].h.ToString("0.000");
                                                                 texte += ";" + horaire.ToString("0.000");
-                                                                texte += ";" + (horaire - st[arrivee].h).ToString("0.000");
+                                                                {
+                                                                    link arc = projet.reseaux[projet.reseau_actif].links[arrivee];
+                                                                    float ti;
+                                                                    if (arc.ligne < 0)
+                                                                        ti = horaire - (st[arrivee].h + arc.temps * projet.param_affectation_horaire.coef_tmap[arc.type]);
+                                                                    else
+                                                                        ti = horaire - (st[arrivee].h + (arc.services[st[arrivee].service].hf - arc.services[st[arrivee].service].hd));
+                                                                    texte += ";" + ti.ToString("0.000");
+                                                                }
                                                                 texte += ";" + st[arrivee].tveh.ToString("0.000");
                                                                 texte += ";" + st[arrivee].tmap.ToString("0.000");
                                                                 texte += ";" + st[arrivee].tatt.ToString("0.000");
@@ -4393,19 +4403,9 @@ namespace Muslic
                                                                 texte += ";" + st[arrivee].pivot.ToString("0");
                                                                 texte += ";" + projet.reseaux[projet.reseau_actif].links[arrivee].type;
                                                                 texte += ";" + st[arrivee].ttoll.ToString("0.000");
-                                                                {
-                                                                    link arc = projet.reseaux[projet.reseau_actif].links[arrivee];
-                                                                    float ti;
-                                                                    if (arc.ligne < 0)
-                                                                        ti = (horaire - st[arrivee].h) - arc.temps * projet.param_affectation_horaire.coef_tmap[arc.type];
-                                                                    else
-                                                                        ti = (horaire - st[arrivee].h) - (arc.services[st[arrivee].service].hf - arc.services[st[arrivee].service].hd);
-                                                                    texte += ";" + ti.ToString("0.000");
-                                                                }
-
+                                                                texte += ";" + (horaire - st[arrivee].h).ToString("0.000");
                                                             }
 
-                                                            //                                itineraire = "MAP," + itineraire;
                                                             if (st[arrivee].cout <= projet.param_affectation_horaire.temps_max)
                                                             {
                                                                 if (test_temps_per_min_arrivee(projet, arrivee) == true)
