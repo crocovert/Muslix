@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Muslix")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.10.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.10+044650f8f4c5c79e3b314c46dcee1c868898bf6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.10+b2a54a1d3780e277fa5b3f6e97d122a26dca8157")]
 [assembly: System.Reflection.AssemblyProductAttribute("Muslix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Muslix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.10.0")]
