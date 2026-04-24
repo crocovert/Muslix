@@ -181,7 +181,6 @@ C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\win-x64\c
 C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\win-x64\hostfxr.dll
 C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\win-x64\hostpolicy.dll
 C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\win-x64\mscordaccore.dll
-C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\win-x64\mscordaccore_amd64_amd64_8.0.2526.11203.dll
 C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\win-x64\mscordbi.dll
 C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\win-x64\mscorrc.dll
 C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\win-x64\msquic.dll
@@ -196,3 +195,4 @@ C:\Users\patrick.palmier\source\repos\Muslix\Muslix\obj\Release\net8.0\win-x64\r
 C:\Users\patrick.palmier\source\repos\Muslix\Muslix\obj\Release\net8.0\win-x64\Muslix.pdb
 C:\Users\patrick.palmier\source\repos\Muslix\Muslix\obj\Release\net8.0\win-x64\Muslix.genruntimeconfig.cache
 C:\Users\patrick.palmier\source\repos\Muslix\Muslix\obj\Release\net8.0\win-x64\ref\Muslix.dll
+C:\Users\patrick.palmier\source\repos\Muslix\Muslix\bin\Release\net8.0\win-x64\mscordaccore_amd64_amd64_8.0.2626.16921.dll
