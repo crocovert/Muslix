@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Muslix": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\patrick.palmier\\Desktop\\Formation2025\\DK\\reseau.txt C:\\Users\\patrick.palmier\\Desktop\\Formation2025\\DK\\matrice.txt  C:\\Users\\patrick.palmier\\Desktop\\Formation2025\\DK\\res_dk  C:\\Users\\patrick.palmier\\Desktop\\Formation2025\\DK\\parametres.txt",
+      "workingDirectory": "C:\\Users\\patrick.palmier\\Desktop\\Formation2025\\DK"
+    }
+  }
+}

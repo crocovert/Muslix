@@ -7,6 +7,12 @@
     <Nullable>enable</Nullable>
     <Platforms>AnyCPU;x64;x86;ARM32</Platforms>
     <Version>1.0.10</Version>
+    <StartupObject>Muslic.Program</StartupObject>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Program_Parallelized.cs" />
+    <Compile Remove="Program_Parallelized_Complete.cs" />
+  </ItemGroup>
 
 </Project>

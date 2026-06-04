@@ -9,6 +9,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|c:\\users\\patrick.palmier\\source\\repos\\muslix\\muslix\\muslix.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|solutionrelative:muslix.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|c:\\users\\patrick.palmier\\source\\repos\\muslix\\muslix\\program_parallelized_complete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:1:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|solutionrelative:program_parallelized_complete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|c:\\users\\patrick.palmier\\source\\repos\\muslix\\muslix\\program_parallelized_complete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:2:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|solutionrelative:program_parallelized_complete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|c:\\users\\patrick.palmier\\source\\repos\\muslix\\muslix\\program_parallelized.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4942D8AD-619F-4A06-9C9B-5043BD9043DD}|Muslix.csproj|solutionrelative:program_parallelized.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,6 +33,14 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Muslix",
@@ -30,12 +50,89 @@
               "RelativeToolTip": "Muslix.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-04-24T07:19:38.822Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program_Parallelized_Complete.cs",
+              "DocumentMoniker": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Program_Parallelized_Complete.cs",
+              "RelativeDocumentMoniker": "Program_Parallelized_Complete.cs",
+              "ToolTip": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Program_Parallelized_Complete.cs",
+              "RelativeToolTip": "Program_Parallelized_Complete.cs",
+              "ViewState": "AgIAAJ4CAAAAAAAAAAAAAL4CAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-27T07:24:19.071Z",
+              "EditorCaption": ""
             },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program_Parallelized.cs",
+              "DocumentMoniker": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Program_Parallelized.cs",
+              "RelativeDocumentMoniker": "Program_Parallelized.cs",
+              "ToolTip": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Program_Parallelized.cs",
+              "RelativeToolTip": "Program_Parallelized.cs",
+              "ViewState": "AgIAAGQDAAAAAAAAAAAQwAUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T11:05:15.683Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "b684a17a-7947-4595-8c5d-1c7efef905f4",
+        "Display": 1,
+        "X": 133,
+        "Y": 135,
+        "Width": 1683,
+        "Height": 783,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program_Parallelized_Complete.cs",
+              "DocumentMoniker": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Program_Parallelized_Complete.cs",
+              "RelativeDocumentMoniker": "Program_Parallelized_Complete.cs",
+              "ToolTip": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Program_Parallelized_Complete.cs",
+              "RelativeToolTip": "Program_Parallelized_Complete.cs",
+              "ViewState": "AgIAABMFAAAAAAAAAAAAwIkEAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-25T11:10:06.123Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "6dd966ab-75cc-4ba2-bb68-24fcf2d11c38",
+        "Display": 1,
+        "X": 162,
+        "Y": 69,
+        "Width": 1683,
+        "Height": 783,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,7 +141,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\patrick.palmier\\source\\repos\\Muslix\\Muslix\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAANsAAAAAAAAAAAAAwPEAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAALoLAAAAAAAAAAAowNULAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-24T12:20:33.086Z",
               "EditorCaption": ""
